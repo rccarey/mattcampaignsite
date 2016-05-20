@@ -1,0 +1,97 @@
+/* styles */
+
+.bodyText {
+    font-family: Arial;
+    font-weight: 200;
+    font-size: 14px;
+}
+#headerImage {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+/* triangle */
+
+.triangle {
+    width: 100%;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 0 0;
+}
+
+/* button*/
+
+#voteButton {
+    /*position*/
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    min-height: 100px;
+    width: 100%;
+    background-color: #346AAC;
+    border: 4px solid #000;
+    border-radius: 10px;
+    /* fonts */
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    /* shadow and shadow animation */
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.14), 0 17px 50px 0 rgba(0,0,0,0.09);
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+#voteButton:hover {
+    background-color: rgb(14, 50, 110);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.30), 0 17px 50px 0 rgba(0,0,0,0.40);
+}
+#buttonContainer {
+    padding-bottom: 30px;
+}
+
+/* modal */
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 300px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+    background: #00d9ff;
+}
